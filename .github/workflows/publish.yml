@@ -1,11 +1,6 @@
 name: This a workflow title 
 on: [push] # When pushing to any branch then run this action
 # Env variable
-env:
-  DOCKERHUB_USERNAME: ${{secrets.DOCKERHUB_USERNAME}}
-  DOCKERHUB_TOKEN: ${{secrets.DOCKERHUB_TOKEN}}
-  REPO_NAME: ${{secrets.REPO_NAME}}
-
 jobs:  
   push-image-to-docker-hub:  # job name    
     runs-on: ubuntu-latest  # runner name : (ubuntu latest version)     
